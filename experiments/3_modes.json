@@ -1,0 +1,22 @@
+{
+  "name": "3_modes",
+  "title": "Parallel modes on a conflict-free and a conflicting workload",
+  "question": "Which slave_parallel_mode finds parallelism in which workload, and what does widening the primary's group commit do for conservative mode?",
+  "mode_of_measurement": "catchup",
+  "repeats": 3,
+  "base": {"clients": 32, "tx_per_client": 500, "rows": 4, "hot": 8, "catchup": true, "threads": 16},
+  "vary": [
+    {"workload": "independent", "threads": 0},
+    {"workload": "independent", "mode": "minimal"},
+    {"workload": "independent", "mode": "conservative"},
+    {"workload": "independent", "mode": "conservative", "commit_wait_count": 16, "commit_wait_usec": 10000},
+    {"workload": "independent", "mode": "optimistic"},
+    {"workload": "independent", "mode": "aggressive"},
+    {"workload": "hotspot", "threads": 0},
+    {"workload": "hotspot", "mode": "minimal"},
+    {"workload": "hotspot", "mode": "conservative"},
+    {"workload": "hotspot", "mode": "conservative", "commit_wait_count": 16, "commit_wait_usec": 10000},
+    {"workload": "hotspot", "mode": "optimistic"},
+    {"workload": "hotspot", "mode": "aggressive"}
+  ]
+}

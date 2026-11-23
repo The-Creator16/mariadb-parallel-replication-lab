@@ -1,0 +1,23 @@
+{
+  "transactions": 32314,
+  "groups": 12564,
+  "mean_group_size": 2.57,
+  "share_in_groups_ge2": 0.793,
+  "size_histogram": {
+    "1": 6687,
+    "2": 1268,
+    "3": 877,
+    "4": 797,
+    "5": 1057,
+    "6": 1185,
+    "7": 667,
+    "8": 26
+  },
+  "flags": {
+    "trans": 32314,
+    "waited": 26763
+  },
+  "domains": {
+    "0": 32314
+  }
+}

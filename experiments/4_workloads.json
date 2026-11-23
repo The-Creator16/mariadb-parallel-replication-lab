@@ -1,0 +1,16 @@
+{
+  "name": "4_workloads",
+  "title": "Which workloads parallelise",
+  "question": "Single-threaded vs 16 workers (optimistic) for workloads that differ only in how their transactions relate when they commit.",
+  "mode_of_measurement": "live",
+  "repeats": 3,
+  "base": {"clients": 32, "tx_per_client": 1000, "rows": 4, "hot": 8, "mode": "optimistic"},
+  "vary": [
+    {"workload": "independent", "threads": 0}, {"workload": "independent", "threads": 16},
+    {"workload": "hotspot", "threads": 0},     {"workload": "hotspot", "threads": 16},
+    {"workload": "serial", "tx_per_client": 8000, "threads": 0},
+    {"workload": "serial", "tx_per_client": 8000, "threads": 16},
+    {"workload": "own_innodb", "threads": 0},  {"workload": "own_innodb", "threads": 16},
+    {"workload": "own_myisam", "threads": 0},  {"workload": "own_myisam", "threads": 16}
+  ]
+}

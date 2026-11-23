@@ -1,0 +1,15 @@
+# A replica that lags on purpose. The delay itself is CHANGE MASTER TO
+# MASTER_DELAY=<seconds>, set by `python -m lab setup` (LAB_DELAY, default 30)
+[mariadb]
+server_id                      = 3
+log_bin                        = mariadb-bin
+binlog_format                  = ROW
+log_slave_updates              = ON
+replicate_annotate_row_events  = ON
+relay_log                      = relay-bin
+skip_slave_start               = ON
+read_only                      = ON
+slave_parallel_threads         = 4
+innodb_buffer_pool_size        = 256M
+skip_name_resolve              = ON
+binlog_expire_logs_seconds     = 86400

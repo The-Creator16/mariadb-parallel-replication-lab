@@ -1,0 +1,39 @@
+{
+  "run": "own_myisam-optimistic-t16-r2",
+  "experiment": "4_workloads",
+  "workload": "own_myisam",
+  "threads": 16,
+  "mode": "optimistic",
+  "clients": 32,
+  "tx_per_client": 1000,
+  "rows": 4,
+  "hot": 8,
+  "commit_wait_count": 0,
+  "commit_wait_usec": 100000,
+  "n_tx": 32000,
+  "load_s": 5.63,
+  "primary_tps": 5682.4,
+  "replica_tps": 1737.3,
+  "kept_up": false,
+  "peak_lag_s": 12.81,
+  "catchup_s": 12.93,
+  "total_s": 18.57,
+  "drain_s": 18.57,
+  "catchup_mode": false,
+  "replica_cpus": "1",
+  "lag_auc": 128.8,
+  "p_group_ratio": 8.74,
+  "r_group_ratio": 1.0,
+  "retried_tx": 0,
+  "worker_states": {
+    "Waiting for prior transaction to commit": 0.954,
+    "Commit": 0.039,
+    "After apply log event": 0.003,
+    "Opening tables": 0.003
+  },
+  "binlog_mean_group": 8.28,
+  "binlog_flags": {
+    "trans": 235
+  },
+  "version": "11.8.6-MariaDB-5 from Ubuntu-log"
+}

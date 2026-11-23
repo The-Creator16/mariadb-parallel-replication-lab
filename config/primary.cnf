@@ -1,0 +1,27 @@
+# Primary. Static settings only; the harness sets binlog_commit_wait_count /
+# binlog_commit_wait_usec per run with SET GLOBAL
+[mariadb]
+server_id                      = 1
+gtid_domain_id                 = 0
+log_bin                        = mariadb-bin
+binlog_format                  = ROW
+
+# --- legibility: what is flowing ---------------------------------------
+# Write the SQL text that produced each row event next to it in the binlog
+# (an Annotate_rows event). Makes `mariadb-binlog -v` readable
+binlog_annotate_row_events     = ON
+# CRC32 every binlog event; the replica re-checks on the way in and out
+binlog_checksum                = CRC32
+master_verify_checksum         = ON
+
+# --- durability: every commit really reaches the disk -------------------
+# This is what makes commits expensive, and what group commit amortises
+sync_binlog                    = 1
+innodb_flush_log_at_trx_commit = 1
+
+innodb_buffer_pool_size        = 512M
+innodb_log_file_size           = 512M
+max_connections                = 300
+skip_name_resolve              = ON
+# Binlogs are purged by the harness between runs; keep a safety net
+binlog_expire_logs_seconds     = 86400

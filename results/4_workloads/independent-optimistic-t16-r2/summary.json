@@ -1,0 +1,40 @@
+{
+  "run": "independent-optimistic-t16-r2",
+  "experiment": "4_workloads",
+  "workload": "independent",
+  "threads": 16,
+  "mode": "optimistic",
+  "clients": 32,
+  "tx_per_client": 1000,
+  "rows": 4,
+  "hot": 8,
+  "commit_wait_count": 0,
+  "commit_wait_usec": 100000,
+  "n_tx": 32000,
+  "load_s": 12.53,
+  "primary_tps": 2554.2,
+  "replica_tps": 2414.2,
+  "kept_up": false,
+  "peak_lag_s": 1.05,
+  "catchup_s": 1.05,
+  "total_s": 13.58,
+  "drain_s": 13.58,
+  "catchup_mode": false,
+  "replica_cpus": "1",
+  "lag_auc": 7.7,
+  "p_group_ratio": 7.85,
+  "r_group_ratio": 5.52,
+  "retried_tx": 8,
+  "worker_states": {
+    "Waiting for prior transaction to commit": 0.531,
+    "Commit": 0.429,
+    "closing tables": 0.027,
+    "Write_rows_log_event::write_row()": 0.009,
+    "After apply log event": 0.004
+  },
+  "binlog_mean_group": 7.66,
+  "binlog_flags": {
+    "trans": 32184
+  },
+  "version": "11.8.6-MariaDB-5 from Ubuntu-log"
+}

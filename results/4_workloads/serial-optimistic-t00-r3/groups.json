@@ -1,0 +1,15 @@
+{
+  "transactions": 8114,
+  "groups": 8114,
+  "mean_group_size": 1.0,
+  "share_in_groups_ge2": 0.0,
+  "size_histogram": {
+    "1": 8114
+  },
+  "flags": {
+    "trans": 8114
+  },
+  "domains": {
+    "0": 8114
+  }
+}

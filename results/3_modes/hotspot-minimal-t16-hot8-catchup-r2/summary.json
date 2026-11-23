@@ -1,0 +1,42 @@
+{
+  "run": "hotspot-minimal-t16-hot8-catchup-r2",
+  "experiment": "3_modes",
+  "workload": "hotspot",
+  "threads": 16,
+  "mode": "minimal",
+  "clients": 32,
+  "tx_per_client": 500,
+  "rows": 4,
+  "hot": 8,
+  "commit_wait_count": 0,
+  "commit_wait_usec": 100000,
+  "n_tx": 16000,
+  "load_s": 8.58,
+  "primary_tps": 1865.8,
+  "replica_tps": 2167.9,
+  "kept_up": false,
+  "peak_lag_s": 8.79,
+  "catchup_s": 7.48,
+  "total_s": 16.06,
+  "drain_s": 7.48,
+  "catchup_mode": true,
+  "replica_cpus": "1",
+  "lag_auc": 97.3,
+  "p_group_ratio": 2.61,
+  "r_group_ratio": 1.67,
+  "retried_tx": 0,
+  "worker_states": {
+    "Waiting for prior transaction to start commit": 0.705,
+    "Commit": 0.205,
+    "Waiting for prior transaction to commit": 0.062,
+    "Write_rows_log_event::write_row()": 0.009,
+    "Update_rows_log_event::find_row()": 0.009,
+    "Update_rows_log_event::ha_update_row()": 0.009
+  },
+  "binlog_mean_group": 2.57,
+  "binlog_flags": {
+    "trans": 16210,
+    "waited": 13500
+  },
+  "version": "11.8.6-MariaDB-5 from Ubuntu-log"
+}

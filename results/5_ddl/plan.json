@@ -1,0 +1,33 @@
+{
+  "name": "5_ddl",
+  "title": "A long ALTER TABLE on the primary, and GTID domains",
+  "question": "An ALTER TABLE ... ALGORITHM=COPY (10-13 s on the primary) runs while 32 clients write. What does it do to the replica, in one domain and in its own domain?",
+  "mode_of_measurement": "live",
+  "repeats": 3,
+  "base": {
+    "clients": 32,
+    "tx_per_client": 1500,
+    "rows": 4,
+    "mode": "optimistic",
+    "archive_rows": 2000000,
+    "ddl_at": 5
+  },
+  "vary": [
+    {
+      "workload": "ddl",
+      "threads": 0
+    },
+    {
+      "workload": "ddl",
+      "threads": 16
+    },
+    {
+      "workload": "ddl_domain",
+      "threads": 0
+    },
+    {
+      "workload": "ddl_domain",
+      "threads": 16
+    }
+  ]
+}

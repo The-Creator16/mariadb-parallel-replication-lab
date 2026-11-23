@@ -1,0 +1,22 @@
+[
+  {
+    "t": 0.012456893920898438,
+    "event": "customers created"
+  },
+  {
+    "t": 35.03726053237915,
+    "event": "DROP TABLE on primary"
+  },
+  {
+    "t": 36.28475570678711,
+    "event": "START SLAVE UNTIL on delayed"
+  },
+  {
+    "t": 66.31309628486633,
+    "event": "delayed stopped just before the DROP"
+  },
+  {
+    "t": 66.32919001579285,
+    "event": "rows restored; delayed restarted"
+  }
+]

@@ -1,0 +1,287 @@
+t,server,hb_lag_s,backlog_tx,sbm_s,mstd_s,primary_seq,replica_seq,retried_tx,p_binlog_commits,p_binlog_group_commits,r_binlog_commits,r_binlog_group_commits,relay_log_space,sql_state,worker_states
+0.043,replica,0.071085,0,0,0,20331,20331,2,20149,3490,20149,13589,95514,Slave has read all relay log; waiting for more updates,"{""Waiting for work from SQL thread"": 8}"
+0.049,delayed,30.149033,304,31,31,20331,20027,3,20149,3490,6,6,95514,Waiting until MASTER_DELAY seconds after master executed event,"{""Waiting for work from SQL thread"": 4}"
+0.542,replica,0.070051,0,0,0,20336,20336,2,20154,3495,20154,13594,96964,Slave has read all relay log; waiting for more updates,
+0.546,delayed,29.645641,299,30,30,20336,20037,12,20154,3495,16,16,96964,Waiting until MASTER_DELAY seconds after master executed event,
+1.044,replica,0.0696,0,0,0,20341,20341,2,20159,3500,20159,13599,98414,Slave has read all relay log; waiting for more updates,"{""Waiting for work from SQL thread"": 8}"
+1.048,delayed,30.147297,304,31,31,20341,20037,12,20159,3500,16,16,98414,Waiting until MASTER_DELAY seconds after master executed event,"{""Waiting for work from SQL thread"": 4}"
+1.543,replica,0.068731,0,0,0,20346,20346,2,20164,3505,20164,13604,99864,Slave has read all relay log; waiting for more updates,
+1.547,delayed,29.644488,299,30,30,20346,20047,20,20164,3505,26,26,99864,Waiting until MASTER_DELAY seconds after master executed event,
+2.043,replica,0.067583,0,0,0,20351,20351,2,20169,3510,20169,13609,101314,Slave has read all relay log; waiting for more updates,"{""Waiting for work from SQL thread"": 8}"
+2.047,delayed,30.14486,304,31,31,20351,20047,20,20169,3510,26,26,101314,Waiting until MASTER_DELAY seconds after master executed event,"{""Waiting for work from SQL thread"": 4}"
+2.544,replica,0.066875,0,0,0,20356,20356,2,20174,3515,20174,13614,102764,Slave has read all relay log; waiting for more updates,
+2.547,delayed,29.642407,299,30,30,20356,20057,29,20174,3515,36,36,102764,Waiting until MASTER_DELAY seconds after master executed event,
+3.045,replica,0.065888,0,0,0,20361,20361,2,20179,3520,20179,13619,104214,Slave has read all relay log; waiting for more updates,"{""Waiting for work from SQL thread"": 8}"
+3.051,delayed,30.144212,304,31,31,20361,20057,29,20179,3520,36,36,104214,Waiting until MASTER_DELAY seconds after master executed event,"{""Waiting for work from SQL thread"": 4}"
+3.544,replica,0.065809,0,0,0,20366,20366,2,20184,3525,20184,13624,105664,Slave has read all relay log; waiting for more updates,
+3.548,delayed,29.640847,299,30,30,20366,20067,38,20184,3525,46,46,105664,Waiting until MASTER_DELAY seconds after master executed event,
+4.051,replica,0.064787,0,0,0,20371,20371,2,20189,3530,20189,13629,107114,Slave has read all relay log; waiting for more updates,"{""Waiting for work from SQL thread"": 8}"
+4.061,delayed,30.14746,304,31,31,20371,20067,38,20189,3530,46,46,107114,Waiting until MASTER_DELAY seconds after master executed event,"{""Waiting for work from SQL thread"": 4}"
+4.544,replica,0.063279,0,0,0,20376,20376,2,20194,3535,20194,13634,108564,Slave has read all relay log; waiting for more updates,
+4.549,delayed,29.637483,299,30,30,20376,20077,47,20194,3535,56,56,108564,Waiting until MASTER_DELAY seconds after master executed event,
+5.046,replica,0.062652,0,0,0,20381,20381,2,20199,3540,20199,13639,110014,Slave has read all relay log; waiting for more updates,"{""Waiting for work from SQL thread"": 8}"
+5.051,delayed,30.139215,304,31,31,20381,20077,47,20199,3540,56,56,110014,Waiting until MASTER_DELAY seconds after master executed event,"{""Waiting for work from SQL thread"": 4}"
+5.545,replica,0.061181,0,0,0,20386,20386,2,20204,3545,20204,13644,111464,Slave has read all relay log; waiting for more updates,
+5.549,delayed,29.636435,299,30,30,20386,20087,56,20204,3545,66,66,111464,Waiting until MASTER_DELAY seconds after master executed event,
+6.047,replica,0.060303,0,0,0,20391,20391,2,20209,3550,20209,13649,112914,Slave has read all relay log; waiting for more updates,"{""Waiting for work from SQL thread"": 8}"
+6.053,delayed,30.138768,304,31,31,20391,20087,56,20209,3550,66,66,112914,Waiting until MASTER_DELAY seconds after master executed event,"{""Waiting for work from SQL thread"": 4}"
+6.545,replica,0.058884,0,0,0,20396,20396,2,20214,3555,20214,13654,114364,Slave has read all relay log; waiting for more updates,
+6.549,delayed,29.634367,299,30,30,20396,20097,64,20214,3555,76,76,114364,Waiting until MASTER_DELAY seconds after master executed event,
+7.049,replica,0.059665,0,0,0,20401,20401,2,20219,3560,20219,13659,115814,Slave has read all relay log; waiting for more updates,"{""Waiting for work from SQL thread"": 8}"
+7.054,delayed,30.138607,304,31,31,20401,20097,64,20219,3560,76,76,115814,Waiting until MASTER_DELAY seconds after master executed event,"{""Waiting for work from SQL thread"": 4}"
+7.546,replica,0.057113,0,0,0,20406,20406,2,20224,3565,20224,13664,117264,Slave has read all relay log; waiting for more updates,
+7.549,delayed,29.632901,299,30,30,20406,20107,73,20224,3565,86,86,117264,Waiting until MASTER_DELAY seconds after master executed event,
+8.046,replica,0.05667,0,0,0,20411,20411,2,20229,3570,20229,13669,118714,Slave has read all relay log; waiting for more updates,"{""Waiting for work from SQL thread"": 8}"
+8.05,delayed,30.133033,304,31,31,20411,20107,73,20229,3570,86,86,118714,Waiting until MASTER_DELAY seconds after master executed event,"{""Waiting for work from SQL thread"": 4}"
+8.546,replica,0.055704,0,0,0,20416,20416,2,20234,3575,20234,13674,120164,Slave has read all relay log; waiting for more updates,
+8.55,delayed,29.630598,299,30,30,20416,20117,73,20234,3575,96,96,120164,Waiting until MASTER_DELAY seconds after master executed event,
+9.048,replica,0.054594,0,0,0,20421,20421,2,20239,3580,20239,13679,121614,Slave has read all relay log; waiting for more updates,"{""Waiting for work from SQL thread"": 8}"
+9.054,delayed,30.133226,304,31,31,20421,20117,73,20239,3580,96,96,121614,Waiting until MASTER_DELAY seconds after master executed event,"{""Waiting for work from SQL thread"": 4}"
+9.548,replica,0.053919,0,0,0,20426,20426,2,20244,3585,20244,13684,123064,Slave has read all relay log; waiting for more updates,
+9.553,delayed,29.630922,299,30,30,20426,20127,73,20244,3585,106,106,123064,Waiting until MASTER_DELAY seconds after master executed event,
+10.047,replica,0.052682,0,0,0,20431,20431,2,20249,3590,20249,13689,124514,Slave has read all relay log; waiting for more updates,"{""Waiting for work from SQL thread"": 8}"
+10.05,delayed,30.129054,304,31,31,20431,20127,73,20249,3590,106,106,124514,Waiting until MASTER_DELAY seconds after master executed event,"{""Waiting for work from SQL thread"": 4}"
+10.547,replica,0.049606,0,0,0,20436,20436,2,20254,3595,20254,13694,125964,Slave has read all relay log; waiting for more updates,
+10.551,delayed,29.626896,299,30,30,20436,20137,82,20254,3595,116,116,125964,Waiting until MASTER_DELAY seconds after master executed event,
+11.048,replica,0.049085,0,0,0,20441,20441,2,20259,3600,20259,13699,127414,Slave has read all relay log; waiting for more updates,"{""Waiting for work from SQL thread"": 8}"
+11.053,delayed,30.12814,304,31,31,20441,20137,82,20259,3600,116,116,127414,Waiting until MASTER_DELAY seconds after master executed event,"{""Waiting for work from SQL thread"": 4}"
+11.547,replica,0.046995,0,0,0,20446,20446,2,20264,3605,20264,13704,128864,Slave has read all relay log; waiting for more updates,
+11.551,delayed,29.625195,299,30,30,20446,20147,82,20264,3605,126,126,128864,Waiting until MASTER_DELAY seconds after master executed event,
+12.048,replica,0.046305,0,0,0,20451,20451,2,20269,3610,20269,13709,130314,Slave has read all relay log; waiting for more updates,"{""Waiting for work from SQL thread"": 8}"
+12.054,delayed,30.126104,304,31,31,20451,20147,82,20269,3610,126,126,130314,Waiting until MASTER_DELAY seconds after master executed event,"{""Waiting for work from SQL thread"": 4}"
+12.548,replica,0.045792,0,0,0,20456,20456,2,20274,3615,20274,13714,131764,Slave has read all relay log; waiting for more updates,
+12.552,delayed,29.623526,299,30,30,20456,20157,82,20274,3615,136,136,131764,Waiting until MASTER_DELAY seconds after master executed event,
+13.049,replica,0.044699,0,0,0,20461,20461,2,20279,3620,20279,13719,133214,Slave has read all relay log; waiting for more updates,"{""Waiting for work from SQL thread"": 8}"
+13.053,delayed,30.124186,304,31,31,20461,20157,82,20279,3620,136,136,133214,Waiting until MASTER_DELAY seconds after master executed event,"{""Waiting for work from SQL thread"": 4}"
+13.548,replica,0.043702,0,0,0,20466,20466,2,20284,3625,20284,13724,134664,Slave has read all relay log; waiting for more updates,
+13.551,delayed,29.619531,299,30,30,20466,20167,91,20284,3625,146,146,134664,Waiting until MASTER_DELAY seconds after master executed event,
+14.05,replica,0.042999,0,0,0,20471,20471,2,20289,3630,20289,13729,136114,Slave has read all relay log; waiting for more updates,"{""Waiting for work from SQL thread"": 8}"
+14.054,delayed,30.121238,304,31,31,20471,20167,91,20289,3630,146,146,136114,Waiting until MASTER_DELAY seconds after master executed event,"{""Waiting for work from SQL thread"": 4}"
+14.549,replica,0.04211,0,0,0,20476,20476,2,20294,3635,20294,13734,137564,Slave has read all relay log; waiting for more updates,
+14.553,delayed,29.618378,299,30,30,20476,20177,100,20294,3635,156,156,137564,Waiting until MASTER_DELAY seconds after master executed event,
+15.049,replica,0.040575,0,0,0,20481,20481,2,20299,3640,20299,13739,139014,Slave has read all relay log; waiting for more updates,"{""Waiting for work from SQL thread"": 8}"
+15.053,delayed,30.118172,304,31,31,20481,20177,100,20299,3640,156,156,139014,Waiting until MASTER_DELAY seconds after master executed event,"{""Waiting for work from SQL thread"": 4}"
+15.549,replica,0.040147,0,0,0,20486,20486,2,20304,3645,20304,13744,140464,Slave has read all relay log; waiting for more updates,
+15.552,delayed,29.615542,299,30,30,20486,20187,108,20304,3645,166,166,140464,Waiting until MASTER_DELAY seconds after master executed event,
+16.051,replica,0.039528,0,0,0,20491,20491,2,20309,3650,20309,13749,141914,Slave has read all relay log; waiting for more updates,"{""Waiting for work from SQL thread"": 8}"
+16.057,delayed,30.118383,304,31,31,20491,20187,108,20309,3650,166,166,141914,Waiting until MASTER_DELAY seconds after master executed event,"{""Waiting for work from SQL thread"": 4}"
+16.55,replica,0.031913,0,0,0,20496,20496,2,20314,3655,20314,13754,143364,Slave has read all relay log; waiting for more updates,
+16.555,delayed,29.614169,299,30,30,20496,20197,117,20314,3655,176,176,143364,Waiting until MASTER_DELAY seconds after master executed event,
+17.051,replica,0.034518,0,0,0,20501,20501,2,20319,3660,20319,13759,144814,Slave has read all relay log; waiting for more updates,"{""Waiting for work from SQL thread"": 8}"
+17.056,delayed,30.115697,304,31,31,20501,20197,117,20319,3660,176,176,144814,Waiting until MASTER_DELAY seconds after master executed event,"{""Waiting for work from SQL thread"": 4}"
+17.55,replica,0.031464,0,0,0,20506,20506,2,20324,3665,20324,13764,146264,Slave has read all relay log; waiting for more updates,
+17.554,delayed,29.612124,299,30,30,20506,20207,126,20324,3665,186,186,146264,Waiting until MASTER_DELAY seconds after master executed event,
+18.053,replica,0.030785,0,0,0,20511,20511,2,20329,3670,20329,13769,147714,Slave has read all relay log; waiting for more updates,"{""Waiting for work from SQL thread"": 8}"
+18.057,delayed,30.114847,304,31,31,20511,20207,126,20329,3670,186,186,147714,Waiting until MASTER_DELAY seconds after master executed event,"{""Waiting for work from SQL thread"": 4}"
+18.554,replica,0.030411,0,0,0,20516,20516,2,20334,3675,20334,13774,149164,Slave has read all relay log; waiting for more updates,
+18.557,delayed,29.613687,299,30,30,20516,20217,135,20334,3675,196,196,149164,Waiting until MASTER_DELAY seconds after master executed event,
+19.052,replica,0.028335,0,0,0,20521,20521,2,20339,3680,20339,13779,150614,Slave has read all relay log; waiting for more updates,"{""Waiting for work from SQL thread"": 8}"
+19.057,delayed,30.111917,304,31,31,20521,20217,135,20339,3680,196,196,150614,Waiting until MASTER_DELAY seconds after master executed event,"{""Waiting for work from SQL thread"": 4}"
+19.551,replica,0.027656,0,0,0,20526,20526,2,20344,3685,20344,13784,152064,Slave has read all relay log; waiting for more updates,
+19.554,delayed,29.708195,300,30,30,20526,20226,143,20344,3685,205,205,152064,Waiting until MASTER_DELAY seconds after master executed event,
+20.051,replica,0.025139,0,0,0,20531,20531,2,20349,3690,20349,13789,153514,Slave has read all relay log; waiting for more updates,"{""Waiting for work from SQL thread"": 8}"
+20.054,delayed,30.208057,305,31,31,20531,20226,143,20349,3690,205,205,153514,Waiting until MASTER_DELAY seconds after master executed event,"{""Waiting for work from SQL thread"": 4}"
+20.552,replica,0.025394,0,0,0,20536,20536,2,20354,3695,20354,13794,154964,Slave has read all relay log; waiting for more updates,
+20.555,delayed,29.706791,300,30,30,20536,20236,152,20354,3695,215,215,154964,Waiting until MASTER_DELAY seconds after master executed event,
+21.052,replica,0.024489,0,0,0,20541,20541,2,20359,3700,20359,13799,156414,Slave has read all relay log; waiting for more updates,"{""Waiting for work from SQL thread"": 8}"
+21.056,delayed,30.207036,305,31,31,20541,20236,152,20359,3700,215,215,156414,Waiting until MASTER_DELAY seconds after master executed event,"{""Waiting for work from SQL thread"": 4}"
+21.553,replica,0.02426,0,0,0,20546,20546,2,20364,3705,20364,13804,157864,Slave has read all relay log; waiting for more updates,
+21.557,delayed,29.705707,300,30,30,20546,20246,152,20364,3705,225,225,157864,Waiting until MASTER_DELAY seconds after master executed event,
+22.051,replica,0.022148,0,0,0,20551,20551,2,20369,3710,20369,13809,159314,Slave has read all relay log; waiting for more updates,"{""Waiting for work from SQL thread"": 8}"
+22.056,delayed,30.204422,305,31,31,20551,20246,152,20369,3710,225,225,159314,Waiting until MASTER_DELAY seconds after master executed event,"{""Waiting for work from SQL thread"": 4}"
+22.552,replica,0.021256,0,0,0,20556,20556,2,20374,3715,20374,13814,160764,Slave has read all relay log; waiting for more updates,
+22.557,delayed,29.701629,300,30,30,20556,20256,160,20374,3715,235,235,160764,Waiting until MASTER_DELAY seconds after master executed event,
+23.053,replica,0.020472,0,0,0,20561,20561,2,20379,3720,20379,13819,162214,Slave has read all relay log; waiting for more updates,"{""Waiting for work from SQL thread"": 8}"
+23.058,delayed,30.202533,305,31,31,20561,20256,160,20379,3720,235,235,162214,Waiting until MASTER_DELAY seconds after master executed event,"{""Waiting for work from SQL thread"": 4}"
+23.552,replica,0.019397,0,0,0,20566,20566,2,20384,3725,20384,13824,163664,Slave has read all relay log; waiting for more updates,
+23.555,delayed,29.697907,300,30,30,20566,20266,169,20384,3725,245,245,163664,Waiting until MASTER_DELAY seconds after master executed event,
+24.054,replica,0.018667,0,0,0,20571,20571,2,20389,3730,20389,13829,165114,Slave has read all relay log; waiting for more updates,"{""Waiting for work from SQL thread"": 8}"
+24.06,delayed,30.199888,305,31,31,20571,20266,169,20389,3730,245,245,165114,Waiting until MASTER_DELAY seconds after master executed event,"{""Waiting for work from SQL thread"": 4}"
+24.554,replica,0.018068,0,0,0,20576,20576,2,20394,3735,20394,13834,166564,Slave has read all relay log; waiting for more updates,
+24.558,delayed,29.697993,300,30,30,20576,20276,178,20394,3735,255,255,166564,Waiting until MASTER_DELAY seconds after master executed event,
+25.054,replica,0.016989,0,0,0,20581,20581,2,20399,3740,20399,13839,168014,Slave has read all relay log; waiting for more updates,"{""Waiting for work from SQL thread"": 8}"
+25.059,delayed,30.198198,305,31,31,20581,20276,178,20399,3740,255,255,168014,Waiting until MASTER_DELAY seconds after master executed event,"{""Waiting for work from SQL thread"": 4}"
+25.553,replica,0.015391,0,0,0,20586,20586,2,20404,3745,20404,13844,169464,Slave has read all relay log; waiting for more updates,
+25.556,delayed,29.694848,300,30,30,20586,20286,187,20404,3745,265,265,169464,Waiting until MASTER_DELAY seconds after master executed event,
+26.055,replica,0.014461,0,0,0,20591,20591,2,20409,3750,20409,13849,170914,Slave has read all relay log; waiting for more updates,"{""Waiting for work from SQL thread"": 8}"
+26.06,delayed,30.196988,305,31,31,20591,20286,187,20409,3750,265,265,170914,Waiting until MASTER_DELAY seconds after master executed event,"{""Waiting for work from SQL thread"": 4}"
+26.553,replica,0.014148,0,0,0,20596,20596,2,20414,3755,20414,13854,172364,Slave has read all relay log; waiting for more updates,
+26.557,delayed,29.693291,300,30,30,20596,20296,195,20414,3755,275,275,172364,Waiting until MASTER_DELAY seconds after master executed event,
+27.055,replica,0.012868,0,0,0,20601,20601,2,20419,3760,20419,13859,173814,Slave has read all relay log; waiting for more updates,"{""Waiting for work from SQL thread"": 8}"
+27.06,delayed,30.194711,305,31,31,20601,20296,195,20419,3760,275,275,173814,Waiting until MASTER_DELAY seconds after master executed event,"{""Waiting for work from SQL thread"": 4}"
+27.554,replica,0.012175,0,0,0,20606,20606,2,20424,3765,20424,13864,175264,Slave has read all relay log; waiting for more updates,
+27.557,delayed,29.691537,300,30,30,20606,20306,195,20424,3765,285,285,175264,Waiting until MASTER_DELAY seconds after master executed event,
+28.055,replica,0.011083,0,0,0,20611,20611,2,20429,3770,20429,13869,176714,Slave has read all relay log; waiting for more updates,"{""Waiting for work from SQL thread"": 8}"
+28.059,delayed,30.192299,305,31,31,20611,20306,195,20429,3770,285,285,176714,Waiting until MASTER_DELAY seconds after master executed event,"{""Waiting for work from SQL thread"": 4}"
+28.554,replica,0.010244,0,0,0,20616,20616,2,20434,3775,20434,13874,178164,Slave has read all relay log; waiting for more updates,
+28.559,delayed,29.690013,300,30,30,20616,20316,203,20434,3775,295,295,178164,Waiting until MASTER_DELAY seconds after master executed event,
+29.055,replica,0.009252,0,0,0,20621,20621,2,20439,3780,20439,13879,179614,Slave has read all relay log; waiting for more updates,"{""Waiting for work from SQL thread"": 8}"
+29.059,delayed,30.19057,305,31,31,20621,20316,203,20439,3780,295,295,179614,Waiting until MASTER_DELAY seconds after master executed event,"{""Waiting for work from SQL thread"": 4}"
+29.554,replica,0.008356,0,0,0,20626,20626,2,20444,3785,20444,13884,181064,Slave has read all relay log; waiting for more updates,
+29.558,delayed,29.687829,300,30,30,20626,20326,210,20444,3785,305,305,181064,Waiting until MASTER_DELAY seconds after master executed event,
+30.055,replica,0.00751,0,0,0,20631,20631,2,20449,3790,20449,13889,182514,Slave has read all relay log; waiting for more updates,"{""Waiting for work from SQL thread"": 8}"
+30.06,delayed,30.188618,305,31,31,20631,20326,210,20449,3790,305,305,182514,Waiting until MASTER_DELAY seconds after master executed event,"{""Waiting for work from SQL thread"": 4}"
+30.554,replica,0.006286,0,0,0,20636,20636,2,20454,3795,20454,13894,183964,Slave has read all relay log; waiting for more updates,
+30.558,delayed,29.685364,296,30,30,20636,20340,217,20454,3795,316,316,183964,Waiting until MASTER_DELAY seconds after master executed event,
+31.056,replica,0.005744,0,0,0,20641,20641,2,20459,3800,20459,13899,185414,Slave has read all relay log; waiting for more updates,"{""Waiting for work from SQL thread"": 8}"
+31.066,delayed,30.18732,301,31,31,20641,20340,217,20459,3800,316,316,185414,Waiting until MASTER_DELAY seconds after master executed event,"{""Waiting for work from SQL thread"": 4}"
+31.556,replica,0.004543,0,0,0,20646,20646,2,20464,3805,20464,13904,186864,Slave has read all relay log; waiting for more updates,
+31.56,delayed,29.684439,296,30,30,20646,20350,226,20464,3805,326,326,186864,Waiting until MASTER_DELAY seconds after master executed event,
+32.058,replica,0.103897,0,0,0,20651,20651,2,20469,3810,20469,13909,188314,Slave has read all relay log; waiting for more updates,"{""Waiting for work from SQL thread"": 8}"
+32.063,delayed,30.186471,301,31,31,20651,20350,226,20469,3810,326,326,188314,Waiting until MASTER_DELAY seconds after master executed event,"{""Waiting for work from SQL thread"": 4}"
+32.556,replica,0.10235,0,0,0,20655,20655,2,20473,3814,20473,13913,189764,Slave has read all relay log; waiting for more updates,
+32.56,delayed,29.682519,295,30,30,20655,20360,235,20473,3814,336,336,189764,Waiting until MASTER_DELAY seconds after master executed event,
+33.061,replica,0.102766,0,0,0,20660,20661,2,20478,3819,20479,13919,191214,Slave has read all relay log; waiting for more updates,"{""Waiting for work from SQL thread"": 8}"
+33.066,delayed,30.187189,300,31,31,20660,20360,235,20478,3819,336,336,191214,Waiting until MASTER_DELAY seconds after master executed event,"{""Waiting for work from SQL thread"": 4}"
+33.557,replica,0.100669,0,0,0,20665,20665,2,20483,3824,20484,13924,192664,Slave has read all relay log; waiting for more updates,
+33.565,delayed,29.681332,295,30,30,20665,20370,243,20483,3824,346,346,192664,Waiting until MASTER_DELAY seconds after master executed event,
+34.058,replica,0.099216,0,0,0,20670,20670,2,20488,3829,20488,13928,193824,Slave has read all relay log; waiting for more updates,"{""Waiting for work from SQL thread"": 8}"
+34.062,delayed,30.18251,300,31,31,20670,20370,243,20488,3829,346,346,194114,Waiting until MASTER_DELAY seconds after master executed event,"{""Waiting for work from SQL thread"": 4}"
+34.556,replica,0.09853,0,0,0,20675,20675,2,20493,3834,20493,13933,195274,Slave has read all relay log; waiting for more updates,
+34.56,delayed,29.678464,295,30,30,20675,20380,243,20493,3834,356,356,195564,Waiting until MASTER_DELAY seconds after master executed event,
+35.058,replica,0.097443,0,0,0,20681,20681,2,20498,3839,20498,13938,196893,Slave has read all relay log; waiting for more updates,"{""Commit"": 1, ""Waiting for work from SQL thread"": 7}"
+35.063,delayed,30.180079,301,31,31,20681,20380,243,20498,3839,356,356,197183,Waiting until MASTER_DELAY seconds after master executed event,"{""Waiting for work from SQL thread"": 4}"
+35.561,replica,0.097783,0,0,0,20686,20686,2,20503,3844,20503,13943,198343,Slave has read all relay log; waiting for more updates,
+35.565,delayed,29.67975,296,30,30,20686,20390,252,20503,3844,366,366,198633,Waiting until MASTER_DELAY seconds after master executed event,
+36.066,replica,0.098179,0,0,0,20691,20691,2,20508,3849,20508,13948,199793,Slave has read all relay log; waiting for more updates,"{""Commit"": 1, ""Waiting for work from SQL thread"": 7}"
+36.074,delayed,30.187422,301,31,31,20691,20390,252,20508,3849,366,366,200083,Waiting until MASTER_DELAY seconds after master executed event,"{""Waiting for work from SQL thread"": 4}"
+36.558,replica,0.095083,0,0,0,20696,20696,2,20513,3854,20513,13953,201243,Slave has read all relay log; waiting for more updates,
+36.563,delayed,29.676022,296,,30,20696,20400,261,20513,3854,376,376,85046,Waiting until MASTER_DELAY seconds after master executed event,
+37.059,replica,0.094411,0,0,0,20701,20701,2,20518,3859,20518,13958,202693,Slave has read all relay log; waiting for more updates,"{""Waiting for work from SQL thread"": 8}"
+37.064,delayed,30.176214,301,,30,20701,20400,261,20518,3859,376,376,85046,Waiting until MASTER_DELAY seconds after master executed event,"{""Waiting for work from SQL thread"": 4}"
+37.561,replica,0.096224,0,0,0,20706,20706,2,20523,3864,20523,13963,204143,Slave has read all relay log; waiting for more updates,
+37.565,delayed,29.675662,296,,29,20706,20410,261,20523,3864,386,386,85046,Waiting until MASTER_DELAY seconds after master executed event,
+38.06,replica,0.092333,0,0,0,20711,20711,2,20528,3869,20528,13968,205593,Slave has read all relay log; waiting for more updates,"{""Waiting for work from SQL thread"": 8}"
+38.065,delayed,30.17473,301,,29,20711,20410,261,20528,3869,386,386,85046,Waiting until MASTER_DELAY seconds after master executed event,"{""Waiting for work from SQL thread"": 4}"
+38.558,replica,0.091588,0,0,0,20716,20716,2,20533,3874,20533,13973,207043,Slave has read all relay log; waiting for more updates,
+38.562,delayed,29.670437,296,,28,20716,20420,261,20533,3874,396,396,85046,Waiting until MASTER_DELAY seconds after master executed event,
+39.059,replica,0.086202,0,0,0,20721,20721,2,20538,3879,20538,13978,208493,Slave has read all relay log; waiting for more updates,"{""Waiting for work from SQL thread"": 8}"
+39.063,delayed,30.171689,301,,28,20721,20420,261,20538,3879,396,396,85046,Waiting until MASTER_DELAY seconds after master executed event,"{""Waiting for work from SQL thread"": 4}"
+39.559,replica,0.087471,0,0,0,20726,20726,2,20543,3884,20543,13983,209943,Slave has read all relay log; waiting for more updates,
+39.562,delayed,29.669408,296,,27,20726,20430,270,20543,3884,406,406,85046,Waiting until MASTER_DELAY seconds after master executed event,
+40.062,replica,0.086849,0,0,0,20731,20731,2,20548,3889,20548,13988,211393,Slave has read all relay log; waiting for more updates,"{""Waiting for work from SQL thread"": 8}"
+40.068,delayed,30.172597,301,,27,20731,20430,270,20548,3889,406,406,85046,Waiting until MASTER_DELAY seconds after master executed event,"{""Waiting for work from SQL thread"": 4}"
+40.563,replica,0.084415,0,0,0,20736,20736,2,20553,3894,20553,13993,212843,Slave has read all relay log; waiting for more updates,
+40.568,delayed,29.668657,296,,26,20736,20440,279,20553,3894,416,416,85046,Waiting until MASTER_DELAY seconds after master executed event,
+41.069,replica,0.082925,0,0,0,20741,20741,2,20558,3899,20558,13998,214293,Slave has read all relay log; waiting for more updates,"{""Waiting for work from SQL thread"": 8}"
+41.073,delayed,30.174417,301,,26,20741,20440,279,20558,3899,416,416,85046,Waiting until MASTER_DELAY seconds after master executed event,"{""Waiting for work from SQL thread"": 4}"
+41.559,replica,0.081586,0,0,0,20746,20746,2,20563,3904,20563,14003,215743,Slave has read all relay log; waiting for more updates,
+41.562,delayed,29.662196,296,,25,20746,20450,287,20563,3904,426,426,85046,Waiting until MASTER_DELAY seconds after master executed event,
+42.061,replica,0.080885,0,0,0,20751,20751,2,20568,3909,20568,14008,217193,Slave has read all relay log; waiting for more updates,"{""Waiting for work from SQL thread"": 8}"
+42.065,delayed,30.164053,301,,25,20751,20450,287,20568,3909,426,426,85046,Waiting until MASTER_DELAY seconds after master executed event,"{""Waiting for work from SQL thread"": 4}"
+42.56,replica,0.076127,0,0,0,20756,20756,2,20573,3914,20573,14013,218643,Slave has read all relay log; waiting for more updates,
+42.563,delayed,29.66115,296,,24,20756,20460,296,20573,3914,436,436,85046,Waiting until MASTER_DELAY seconds after master executed event,
+43.063,replica,0.075848,0,0,0,20761,20761,2,20578,3919,20578,14018,220093,Slave has read all relay log; waiting for more updates,"{""Waiting for work from SQL thread"": 8}"
+43.067,delayed,30.163691,301,,24,20761,20460,296,20578,3919,436,436,85046,Waiting until MASTER_DELAY seconds after master executed event,"{""Waiting for work from SQL thread"": 4}"
+43.563,replica,0.074648,0,0,0,20766,20766,2,20583,3924,20583,14023,221543,Slave has read all relay log; waiting for more updates,
+43.567,delayed,29.661677,296,,23,20766,20470,305,20583,3924,446,446,85046,Waiting until MASTER_DELAY seconds after master executed event,
+44.063,replica,0.074054,0,0,0,20771,20771,2,20588,3929,20588,14028,222993,Slave has read all relay log; waiting for more updates,"{""Waiting for work from SQL thread"": 8}"
+44.068,delayed,30.162245,301,,23,20771,20470,305,20588,3929,446,446,85046,Waiting until MASTER_DELAY seconds after master executed event,"{""Waiting for work from SQL thread"": 4}"
+44.563,replica,0.073726,0,0,0,20776,20776,2,20593,3934,20593,14033,224443,Slave has read all relay log; waiting for more updates,
+44.567,delayed,29.659359,296,,22,20776,20480,305,20593,3934,456,456,85046,Waiting until MASTER_DELAY seconds after master executed event,
+45.064,replica,0.072383,0,0,0,20781,20781,2,20598,3939,20598,14038,225893,Slave has read all relay log; waiting for more updates,"{""Waiting for work from SQL thread"": 8}"
+45.069,delayed,30.160382,301,,22,20781,20480,305,20598,3939,456,456,85046,Waiting until MASTER_DELAY seconds after master executed event,"{""Waiting for work from SQL thread"": 4}"
+45.563,replica,0.07145,0,0,0,20786,20786,2,20603,3944,20603,14043,227343,Slave has read all relay log; waiting for more updates,
+45.567,delayed,29.657116,296,,21,20786,20490,314,20603,3944,466,466,85046,Waiting until MASTER_DELAY seconds after master executed event,
+46.065,replica,0.068453,0,0,0,20791,20791,2,20608,3949,20608,14048,228793,Slave has read all relay log; waiting for more updates,"{""Waiting for work from SQL thread"": 8}"
+46.07,delayed,30.159561,301,,21,20791,20490,314,20608,3949,466,466,85046,Waiting until MASTER_DELAY seconds after master executed event,"{""Waiting for work from SQL thread"": 4}"
+46.566,replica,0.065944,0,0,0,20796,20796,2,20613,3954,20613,14053,230243,Slave has read all relay log; waiting for more updates,
+46.57,delayed,29.655601,296,,20,20796,20500,322,20613,3954,476,476,85046,Waiting until MASTER_DELAY seconds after master executed event,
+47.067,replica,0.066715,0,0,0,20801,20801,2,20618,3959,20618,14058,231693,Slave has read all relay log; waiting for more updates,"{""Waiting for work from SQL thread"": 8}"
+47.075,delayed,30.156146,301,,20,20801,20500,322,20618,3959,476,476,85046,Waiting until MASTER_DELAY seconds after master executed event,"{""Waiting for work from SQL thread"": 4}"
+47.563,replica,0.06486,0,0,0,20806,20806,2,20623,3964,20623,14063,233143,Slave has read all relay log; waiting for more updates,
+47.567,delayed,29.647631,296,,19,20806,20510,329,20623,3964,486,486,85046,Waiting until MASTER_DELAY seconds after master executed event,
+48.066,replica,0.064044,0,0,0,20811,20811,2,20628,3969,20628,14068,234593,Slave has read all relay log; waiting for more updates,"{""Waiting for work from SQL thread"": 8}"
+48.071,delayed,30.150445,301,,19,20811,20510,329,20628,3969,486,486,85046,Waiting until MASTER_DELAY seconds after master executed event,"{""Waiting for work from SQL thread"": 4}"
+48.564,replica,0.062392,0,0,0,20816,20816,2,20633,3974,20633,14073,236043,Slave has read all relay log; waiting for more updates,
+48.569,delayed,29.646262,296,,18,20816,20520,329,20633,3974,496,496,85046,Waiting until MASTER_DELAY seconds after master executed event,
+49.074,replica,0.066332,0,0,0,20821,20821,2,20638,3979,20638,14078,237493,Slave has read all relay log; waiting for more updates,"{""Waiting for work from SQL thread"": 8}"
+49.082,delayed,30.155602,301,,18,20821,20520,329,20638,3979,496,496,85046,Waiting until MASTER_DELAY seconds after master executed event,"{""Waiting for work from SQL thread"": 4}"
+49.563,replica,0.06062,0,0,0,20826,20826,2,20643,3984,20643,14083,238943,Slave has read all relay log; waiting for more updates,
+49.567,delayed,29.64275,296,,17,20826,20530,329,20643,3984,506,506,85046,Waiting until MASTER_DELAY seconds after master executed event,
+50.066,replica,0.060298,0,0,0,20831,20831,2,20648,3989,20648,14088,240393,Slave has read all relay log; waiting for more updates,"{""Waiting for work from SQL thread"": 8}"
+50.07,delayed,30.145356,301,,17,20831,20530,329,20648,3989,506,506,85046,Waiting until MASTER_DELAY seconds after master executed event,"{""Waiting for work from SQL thread"": 4}"
+50.564,replica,0.058331,0,0,0,20836,20836,2,20653,3994,20653,14093,241843,Slave has read all relay log; waiting for more updates,
+50.568,delayed,29.641438,296,,16,20836,20540,338,20653,3994,516,516,85046,Waiting until MASTER_DELAY seconds after master executed event,
+51.065,replica,0.053607,0,0,0,20841,20841,2,20658,3999,20658,14098,243293,Slave has read all relay log; waiting for more updates,"{""Waiting for work from SQL thread"": 8}"
+51.07,delayed,30.14284,301,,16,20841,20540,338,20658,3999,516,516,85046,Waiting until MASTER_DELAY seconds after master executed event,"{""Waiting for work from SQL thread"": 4}"
+51.564,replica,0.050051,0,0,0,20846,20846,2,20663,4004,20663,14103,244743,Slave has read all relay log; waiting for more updates,
+51.567,delayed,29.639564,296,,15,20846,20550,347,20663,4004,526,526,85046,Waiting until MASTER_DELAY seconds after master executed event,
+52.065,replica,0.04846,0,0,0,20851,20851,2,20668,4009,20668,14108,246193,Slave has read all relay log; waiting for more updates,"{""Waiting for work from SQL thread"": 8}"
+52.071,delayed,30.140104,301,,15,20851,20550,347,20668,4009,526,526,85046,Waiting until MASTER_DELAY seconds after master executed event,"{""Waiting for work from SQL thread"": 4}"
+52.566,replica,0.048784,0,0,0,20856,20856,2,20673,4014,20673,14113,247643,Slave has read all relay log; waiting for more updates,
+52.57,delayed,29.638372,296,,14,20856,20560,356,20673,4014,536,536,85046,Waiting until MASTER_DELAY seconds after master executed event,
+53.068,replica,0.047456,0,0,0,20861,20861,2,20678,4019,20678,14118,249093,Slave has read all relay log; waiting for more updates,"{""Waiting for work from SQL thread"": 8}"
+53.073,delayed,30.140752,301,,14,20861,20560,356,20678,4019,536,536,85046,Waiting until MASTER_DELAY seconds after master executed event,"{""Waiting for work from SQL thread"": 4}"
+53.565,replica,0.044496,0,0,0,20866,20866,2,20683,4024,20683,14123,250543,Slave has read all relay log; waiting for more updates,
+53.569,delayed,29.635547,296,,13,20866,20570,365,20683,4024,546,546,85046,Waiting until MASTER_DELAY seconds after master executed event,
+54.066,replica,0.043215,0,0,0,20871,20871,2,20688,4029,20688,14128,251993,Slave has read all relay log; waiting for more updates,"{""Waiting for work from SQL thread"": 8}"
+54.07,delayed,30.135856,301,,13,20871,20570,365,20688,4029,546,546,85046,Waiting until MASTER_DELAY seconds after master executed event,"{""Waiting for work from SQL thread"": 4}"
+54.567,replica,0.042789,0,0,0,20876,20876,2,20693,4034,20693,14133,253443,Slave has read all relay log; waiting for more updates,
+54.571,delayed,29.634988,296,,12,20876,20580,374,20693,4034,556,556,85046,Waiting until MASTER_DELAY seconds after master executed event,
+55.068,replica,0.041694,0,0,0,20881,20881,2,20698,4039,20698,14138,254893,Slave has read all relay log; waiting for more updates,"{""Waiting for work from SQL thread"": 8}"
+55.073,delayed,30.136551,301,,12,20881,20580,374,20698,4039,556,556,85046,Waiting until MASTER_DELAY seconds after master executed event,"{""Waiting for work from SQL thread"": 4}"
+55.566,replica,0.0405,0,0,0,20886,20886,2,20703,4044,20703,14143,256343,Slave has read all relay log; waiting for more updates,
+55.569,delayed,29.631714,296,,11,20886,20590,383,20703,4044,566,566,85046,Waiting until MASTER_DELAY seconds after master executed event,
+56.072,replica,0.041965,0,0,0,20891,20891,2,20708,4049,20708,14148,257793,Slave has read all relay log; waiting for more updates,"{""Waiting for work from SQL thread"": 8}"
+56.08,delayed,30.137906,301,,11,20891,20590,383,20708,4049,566,566,85046,Waiting until MASTER_DELAY seconds after master executed event,"{""Waiting for work from SQL thread"": 4}"
+56.567,replica,0.038763,0,0,0,20896,20896,2,20713,4054,20713,14153,259243,Slave has read all relay log; waiting for more updates,
+56.571,delayed,29.630479,296,,10,20896,20600,392,20713,4054,576,576,85046,Waiting until MASTER_DELAY seconds after master executed event,
+57.071,replica,0.038141,0,0,0,20901,20901,2,20718,4059,20718,14158,260693,Slave has read all relay log; waiting for more updates,"{""Waiting for work from SQL thread"": 8}"
+57.077,delayed,30.134201,301,,10,20901,20600,392,20718,4059,576,576,85046,Waiting until MASTER_DELAY seconds after master executed event,"{""Waiting for work from SQL thread"": 4}"
+57.566,replica,0.036804,0,0,0,20906,20906,2,20723,4064,20723,14163,262143,Slave has read all relay log; waiting for more updates,
+57.57,delayed,29.627893,296,,9,20906,20610,400,20723,4064,586,586,85046,Waiting until MASTER_DELAY seconds after master executed event,
+58.069,replica,0.036521,0,0,0,20911,20911,2,20728,4069,20728,14168,263593,Slave has read all relay log; waiting for more updates,"{""Waiting for work from SQL thread"": 8}"
+58.074,delayed,30.130433,301,,9,20911,20610,400,20728,4069,586,586,85046,Waiting until MASTER_DELAY seconds after master executed event,"{""Waiting for work from SQL thread"": 4}"
+58.568,replica,0.035341,0,0,0,20916,20916,2,20733,4074,20733,14173,265043,Slave has read all relay log; waiting for more updates,
+58.571,delayed,29.626569,296,,8,20916,20620,408,20733,4074,596,596,85046,Waiting until MASTER_DELAY seconds after master executed event,
+59.068,replica,0.03219,0,0,0,20921,20921,2,20738,4079,20738,14178,266493,Slave has read all relay log; waiting for more updates,"{""Waiting for work from SQL thread"": 8}"
+59.073,delayed,30.127387,301,,8,20921,20620,408,20738,4079,596,596,85046,Waiting until MASTER_DELAY seconds after master executed event,"{""Waiting for work from SQL thread"": 4}"
+59.569,replica,0.031788,0,0,0,20926,20926,2,20743,4084,20743,14183,267943,Slave has read all relay log; waiting for more updates,
+59.573,delayed,29.726767,297,,7,20926,20629,416,20743,4084,605,605,85046,Waiting until MASTER_DELAY seconds after master executed event,
+60.069,replica,0.030351,0,0,0,20931,20931,2,20748,4089,20748,14188,269393,Slave has read all relay log; waiting for more updates,"{""Waiting for work from SQL thread"": 8}"
+60.074,delayed,30.226772,302,,7,20931,20629,416,20748,4089,605,605,85046,Waiting until MASTER_DELAY seconds after master executed event,"{""Waiting for work from SQL thread"": 4}"
+60.569,replica,0.029502,0,0,0,20936,20936,2,20753,4094,20753,14193,270843,Slave has read all relay log; waiting for more updates,
+60.572,delayed,29.72371,297,,6,20936,20639,423,20753,4094,615,615,85046,Waiting until MASTER_DELAY seconds after master executed event,
+61.071,replica,0.028463,0,0,0,20941,20941,2,20758,4099,20758,14198,272293,Slave has read all relay log; waiting for more updates,"{""Waiting for work from SQL thread"": 8}"
+61.077,delayed,30.225918,302,,6,20941,20639,423,20758,4099,615,615,85046,Waiting until MASTER_DELAY seconds after master executed event,"{""Waiting for work from SQL thread"": 4}"
+61.571,replica,0.024612,0,0,0,20946,20946,2,20763,4104,20763,14203,273743,Slave has read all relay log; waiting for more updates,
+61.575,delayed,29.72346,297,,5,20946,20649,430,20763,4104,625,625,85046,Waiting until MASTER_DELAY seconds after master executed event,
+62.072,replica,0.026552,0,0,0,20951,20951,2,20768,4109,20768,14208,275193,Slave has read all relay log; waiting for more updates,"{""Waiting for work from SQL thread"": 8}"
+62.079,delayed,30.223798,302,,5,20951,20649,430,20768,4109,625,625,85046,Waiting until MASTER_DELAY seconds after master executed event,"{""Waiting for work from SQL thread"": 4}"
+62.57,replica,0.025901,0,0,0,20956,20956,2,20773,4114,20773,14213,276643,Slave has read all relay log; waiting for more updates,
+62.573,delayed,29.719051,297,,4,20956,20659,430,20773,4114,635,635,85046,Waiting until MASTER_DELAY seconds after master executed event,
+63.072,replica,0.023932,0,0,0,20961,20961,2,20778,4119,20778,14218,278093,Slave has read all relay log; waiting for more updates,"{""Waiting for work from SQL thread"": 8}"
+63.077,delayed,30.220639,302,,4,20961,20659,430,20778,4119,635,635,85046,Waiting until MASTER_DELAY seconds after master executed event,"{""Waiting for work from SQL thread"": 4}"
+63.57,replica,0.023619,0,0,0,20966,20966,2,20783,4124,20783,14223,279543,Slave has read all relay log; waiting for more updates,
+63.575,delayed,29.71705,297,,3,20966,20669,430,20783,4124,645,645,85046,Waiting until MASTER_DELAY seconds after master executed event,
+64.072,replica,0.023405,0,0,0,20971,20971,2,20788,4129,20788,14228,280993,Slave has read all relay log; waiting for more updates,"{""Waiting for work from SQL thread"": 8}"
+64.077,delayed,30.219391,302,,3,20971,20669,430,20788,4129,645,645,85046,Waiting until MASTER_DELAY seconds after master executed event,"{""Waiting for work from SQL thread"": 4}"
+64.571,replica,0.022392,0,0,0,20976,20976,2,20793,4134,20793,14233,282443,Slave has read all relay log; waiting for more updates,
+64.577,delayed,29.716802,297,,2,20976,20679,439,20793,4134,655,655,85046,Waiting until MASTER_DELAY seconds after master executed event,
+65.073,replica,0.020777,0,0,0,20981,20981,2,20798,4139,20798,14238,283893,Slave has read all relay log; waiting for more updates,"{""Waiting for work from SQL thread"": 8}"
+65.078,delayed,30.21818,302,,2,20981,20679,439,20798,4139,655,655,85046,Waiting until MASTER_DELAY seconds after master executed event,"{""Waiting for work from SQL thread"": 4}"
+65.571,replica,0.020007,0,0,0,20986,20986,2,20803,4144,20803,14243,285343,Slave has read all relay log; waiting for more updates,
+65.574,delayed,30.615508,306,,1,20986,20680,439,20803,4144,656,656,85046,,
+66.073,replica,0.018948,0,0,0,20991,20991,2,20808,4149,20808,14248,286793,Slave has read all relay log; waiting for more updates,"{""Waiting for work from SQL thread"": 8}"
+66.079,delayed,31.118195,311,,1,20991,20680,439,20808,4149,656,656,85046,,{}
+66.579,replica,0.018662,0,0,0,20998,20998,2,20814,4155,20814,14254,288878,Slave has read all relay log; waiting for more updates,
+66.583,delayed,29.719183,298,30,30,20998,20700,457,20814,4155,675,675,93057,Waiting until MASTER_DELAY seconds after master executed event,
+67.073,replica,0.016961,0,0,0,21003,21003,2,20819,4160,20819,14259,290328,Slave has read all relay log; waiting for more updates,"{""Waiting for work from SQL thread"": 8}"
+67.077,delayed,30.213454,303,31,31,21003,20700,457,20819,4160,675,675,94507,Waiting until MASTER_DELAY seconds after master executed event,"{""Waiting for work from SQL thread"": 4}"
+67.572,replica,0.016422,0,0,0,21008,21008,2,20824,4165,20824,14264,291778,Slave has read all relay log; waiting for more updates,
+67.577,delayed,29.710869,298,30,30,21008,20710,465,20824,4165,685,685,95957,Waiting until MASTER_DELAY seconds after master executed event,
+68.073,replica,0.015765,0,0,0,21013,21013,2,20829,4170,20829,14269,293228,Slave has read all relay log; waiting for more updates,"{""Waiting for work from SQL thread"": 8}"
+68.079,delayed,30.211287,303,31,31,21013,20710,465,20829,4170,685,685,97407,Waiting until MASTER_DELAY seconds after master executed event,"{""Waiting for work from SQL thread"": 4}"
+68.573,replica,0.014799,0,0,0,21018,21018,2,20834,4175,20834,14274,294678,Slave has read all relay log; waiting for more updates,
+68.578,delayed,29.706606,298,30,30,21018,20720,474,20834,4175,695,695,98857,Waiting until MASTER_DELAY seconds after master executed event,
+69.074,replica,0.014297,0,0,0,21023,21023,2,20839,4180,20839,14279,296128,Slave has read all relay log; waiting for more updates,"{""Waiting for work from SQL thread"": 8}"
+69.078,delayed,30.20721,303,31,31,21023,20720,474,20839,4180,695,695,100307,Waiting until MASTER_DELAY seconds after master executed event,"{""Waiting for work from SQL thread"": 4}"
+69.575,replica,0.013426,0,0,0,21028,21028,2,20844,4185,20844,14284,297578,Slave has read all relay log; waiting for more updates,
+69.58,delayed,29.706189,298,30,30,21028,20730,483,20844,4185,705,705,101757,Waiting until MASTER_DELAY seconds after master executed event,
+70.074,replica,0.110731,0,0,0,21032,21032,2,20848,4189,20848,14288,298738,Slave has read all relay log; waiting for more updates,"{""Waiting for work from SQL thread"": 8}"
+70.08,delayed,30.205893,302,31,31,21032,20730,483,20848,4189,705,705,102917,Waiting until MASTER_DELAY seconds after master executed event,"{""Waiting for work from SQL thread"": 4}"
+70.573,replica,0.009475,0,0,0,21038,21038,2,20854,4195,20854,14294,300478,Slave has read all relay log; waiting for more updates,
+70.577,delayed,29.700063,298,30,30,21038,20740,483,20854,4195,715,715,104657,Waiting until MASTER_DELAY seconds after master executed event,
+71.075,replica,0.008823,0,0,0,21043,21043,2,20859,4200,20859,14299,301928,Slave has read all relay log; waiting for more updates,"{""Waiting for work from SQL thread"": 8}"
+71.08,delayed,30.201908,303,31,31,21043,20740,483,20859,4200,715,715,106107,Waiting until MASTER_DELAY seconds after master executed event,"{""Waiting for work from SQL thread"": 4}"

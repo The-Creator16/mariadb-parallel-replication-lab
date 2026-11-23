@@ -1,0 +1,10 @@
+{
+  "name": "1_scaling",
+  "title": "Live lag vs. number of parallel workers",
+  "question": "With the replica applying while the load runs, how much lag does each slave_parallel_threads setting leave?",
+  "mode_of_measurement": "live",
+  "repeats": 3,
+  "base": {"workload": "independent", "clients": 32, "tx_per_client": 1500, "rows": 4, "mode": "optimistic"},
+  "vary": [{"threads": 0}, {"threads": 1}, {"threads": 2}, {"threads": 4},
+           {"threads": 8}, {"threads": 16}, {"threads": 32}, {"threads": 64}]
+}

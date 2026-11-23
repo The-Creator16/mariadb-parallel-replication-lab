@@ -1,0 +1,98 @@
+t,server,hb_lag_s,backlog_tx,sbm_s,mstd_s,primary_seq,replica_seq,retried_tx,p_binlog_commits,p_binlog_group_commits,r_binlog_commits,r_binlog_group_commits,relay_log_space,sql_state,worker_states
+0.028,replica,0.020867,0,0,,1565151,1565151,6316,1561665,255036,1561665,854817,1499,Slave has read all relay log; waiting for more updates,"{""Waiting for work from SQL thread"": 64}"
+0.278,replica,0.073054,0,0,,1565153,1565153,6316,1561667,255038,1561667,854819,2079,Slave has read all relay log; waiting for more updates,
+0.528,replica,0.02241,0,0,,1565156,1565156,6316,1561670,255041,1561670,854822,2949,Slave has read all relay log; waiting for more updates,
+0.778,replica,0.072108,0,0,,1565158,1565158,6316,1561672,255043,1561672,854824,3529,Slave has read all relay log; waiting for more updates,
+1.031,replica,0.021812,0,0,,1565161,1565161,6316,1561675,255046,1561675,854827,4399,Slave has read all relay log; waiting for more updates,"{""Waiting for work from SQL thread"": 64}"
+1.279,replica,0.071516,0,0,,1565163,1565163,6316,1561677,255048,1561677,854829,4979,Slave has read all relay log; waiting for more updates,
+1.553,replica,0.038614,0,0,,1565166,1565166,6316,1561680,255051,1561680,854832,5849,Slave has read all relay log; waiting for more updates,
+1.79,replica,0.078789,0,0,,1565399,1565402,6316,1561916,255090,1561916,854908,700852,Slave has read all relay log; waiting for more updates,
+2.037,replica,0.123931,32,0,,1565923,1565891,6316,1562437,255177,1562405,855035,2242233,Reading event from the relay log,"{""Commit"": 14, ""Waiting for work from SQL thread"": 50}"
+2.298,replica,0.172407,149,0,,1566409,1566260,6316,1562899,255255,1562774,855069,3682991,Reading event from the relay log,
+2.536,replica,0.119855,1,0,,1566831,1566830,6317,1563345,255320,1563344,855099,4933154,Slave has read all relay log; waiting for more updates,
+2.82,replica,0.087529,180,0,,1567468,1567288,6317,1564002,255406,1563804,855145,6903719,Reading event from the relay log,
+3.05,replica,0.120408,114,0,,1568073,1567959,6317,1564587,255474,1564486,855190,8611155,Reading event from the relay log,"{""Commit"": 4, ""Waiting for prior transaction to commit"": 60}"
+3.295,replica,0.05947,63,0,,1568667,1568604,6317,1565150,255554,1565150,855347,10284415,Slave has read all relay log; waiting for more updates,
+3.538,replica,0.116514,9,0,,1569261,1569252,6317,1565775,255636,1565779,855436,12152823,Slave has read all relay log; waiting for more updates,
+3.781,replica,0.061975,0,0,,1569826,1569826,6317,1566340,255716,1566340,855534,13821046,Slave has read all relay log; waiting for more updates,
+4.04,replica,0.112632,0,0,,1570384,1570384,6317,1566898,255785,1566898,855647,15480429,Slave has read all relay log; waiting for more updates,"{""Commit"": 2, ""Waiting for work from SQL thread"": 62}"
+4.309,replica,0.078786,182,0,,1571183,1571001,6317,1567732,255897,1567579,855698,17960502,Slave has read all relay log; waiting for more updates,
+4.537,replica,0.216412,388,0,,1571945,1571557,6317,1568435,255980,1568071,855726,20028669,Slave has read all relay log; waiting for more updates,
+4.802,replica,0.269095,561,0,,1572609,1572048,6317,1569123,256060,1568622,855748,22120817,Reading event from the relay log,
+5.08,replica,0.215047,461,0,,1573351,1572890,6317,1569865,256143,1569446,855788,24520547,Slave has read all relay log; waiting for more updates,"{""Commit"": 17, ""Update_rows_log_event::ha_update_row()"": 1, ""Waiting for prior transaction to commit"": 45, ""Write_rows_log_event::write_row()"": 1}"
+5.316,replica,0.267325,353,0,,1573843,1573490,6317,1570357,256193,1570014,855826,25878627,Slave has read all relay log; waiting for more updates,
+5.555,replica,0.212958,360,0,,1574699,1574339,6317,1571212,256282,1570886,855872,28469077,Slave has read all relay log; waiting for more updates,
+5.813,replica,0.177964,390,0,,1575395,1575005,6317,1571909,256367,1571555,855903,30614012,Slave has read all relay log; waiting for more updates,
+6.059,replica,0.186852,445,0,,1576114,1575669,6318,1572617,256453,1572183,855940,32548785,Reading event from the relay log,"{""closing tables"": 2, ""Commit"": 7, ""Update_rows_log_event::ha_update_row()"": 1, ""Waiting for prior transaction to commit"": 54}"
+6.3,replica,0.263205,934,0,,1577079,1576145,6319,1573593,256562,1572723,855969,35055335,Reading event from the relay log,
+6.547,replica,0.309327,730,1,,1577796,1577066,6319,1574293,256654,1573619,856013,37562551,Reading event from the relay log,
+6.85,replica,0.259158,498,0,,1578337,1577839,6319,1574851,256722,1574421,856053,38998092,Reading event from the relay log,
+7.097,replica,0.416081,858,0,,1579114,1578256,6319,1575611,256813,1574770,856076,41791365,Slave has read all relay log; waiting for more updates,"{"""": 3, ""Commit"": 1, ""Waiting for prior transaction to commit"": 60}"
+7.313,replica,0.476036,1156,0,,1579864,1578708,6319,1576378,256892,1575286,856102,43674505,Slave has read all relay log; waiting for more updates,
+7.558,replica,0.409556,806,1,,1580305,1579499,6319,1576818,256958,1576064,856144,44981996,Slave has read all relay log; waiting for more updates,
+7.803,replica,0.364397,571,0,,1580888,1580317,6319,1577403,257027,1576831,856183,46724963,Slave has read all relay log; waiting for more updates,
+8.046,replica,0.207939,478,0,,1581482,1581004,6319,1577996,257093,1577518,856214,48468681,Slave has read all relay log; waiting for more updates,"{""After apply log event"": 28, ""closing tables"": 5, ""Commit"": 7, ""Waiting for prior transaction to commit"": 23, ""Write_rows_log_event::write_row()"": 1}"
+8.335,replica,0.258972,640,0,,1582152,1581512,6320,1578666,257167,1578026,856248,50837351,Slave has read all relay log; waiting for more updates,
+8.542,replica,0.409683,915,1,,1582981,1582066,6320,1579495,257268,1578618,856283,52938803,Slave has read all relay log; waiting for more updates,
+8.821,replica,0.278562,332,0,,1583536,1583204,6320,1580050,257349,1579746,856339,54654862,Slave has read all relay log; waiting for more updates,
+9.081,replica,0.131888,284,0,,1584181,1583897,6321,1580693,257419,1580414,856373,56508191,Slave has read all relay log; waiting for more updates,"{""Commit"": 2, ""Update_rows_log_event::ha_update_row()"": 1, ""Waiting for prior transaction to commit"": 61}"
+9.305,replica,0.254005,611,0,,1584828,1584217,6321,1581342,257500,1580731,856392,58366284,Reading event from the relay log,
+9.56,replica,0.324612,464,1,,1585395,1584931,6321,1581909,257572,1581456,856437,60116587,Reading event from the relay log,
+9.82,replica,0.185637,331,0,,1586066,1585735,6321,1582580,257651,1582249,856471,62120091,Slave has read all relay log; waiting for more updates,
+10.065,replica,0.224301,304,0,,1586746,1586442,6321,1583260,257727,1582956,856502,64133744,Slave has read all relay log; waiting for more updates,"{""Commit"": 2, ""Waiting for prior transaction to commit"": 62}"
+10.304,replica,0.351491,502,0,,1587143,1586641,6321,1583657,257781,1583155,856513,65299785,Reading event from the relay log,
+10.548,replica,0.301657,767,1,,1587948,1587181,6322,1584462,257872,1583695,856547,67727382,Slave has read all relay log; waiting for more updates,
+10.812,replica,0.269118,521,0,,1588595,1588074,6323,1585109,257956,1584588,856596,69628481,Slave has read all relay log; waiting for more updates,
+11.083,replica,0.20301,385,0,,1589129,1588744,6323,1585643,258030,1585322,856635,71500018,Slave has read all relay log; waiting for more updates,"{""Commit"": 10, ""Waiting for prior transaction to commit"": 53, ""Write_rows_log_event::write_row()"": 1}"
+11.346,replica,0.286608,596,0,,1589773,1589177,6323,1586287,258104,1585706,856664,73454789,Reading event from the relay log,
+11.557,replica,0.416307,858,1,,1590539,1589681,6323,1587053,258189,1586195,856687,75412527,Slave has read all relay log; waiting for more updates,
+11.812,replica,0.352212,607,0,,1591091,1590484,6323,1587573,258258,1587025,856726,76984158,Slave has read all relay log; waiting for more updates,
+12.05,replica,0.303606,666,0,,1591856,1591190,6323,1588369,258359,1587704,856762,79325300,Slave has read all relay log; waiting for more updates,"{""Commit"": 4, ""Update_rows_log_event::ha_update_row()"": 4, ""Waiting for prior transaction to commit"": 49, ""Write_rows_log_event::write_row()"": 7}"
+12.342,replica,0.28463,395,0,,1592451,1592056,6323,1588965,258428,1588586,856808,81371266,Reading event from the relay log,
+12.569,replica,0.316508,542,1,,1593126,1592584,6323,1589639,258510,1589106,856840,83294834,Reading event from the relay log,
+12.825,replica,0.375407,809,0,,1593912,1593103,6323,1590444,258599,1589617,856872,85631598,Reading event from the relay log,
+13.05,replica,0.305529,699,0,,1594613,1593914,6324,1591127,258676,1590437,856911,87541555,Slave has read all relay log; waiting for more updates,"{""After apply log event"": 1, ""closing tables"": 4, ""Commit"": 12, ""Waiting for prior transaction to commit"": 30, ""Write_rows_log_event::write_row()"": 17}"
+13.305,replica,0.254214,636,0,,1595354,1594718,6325,1591868,258763,1591232,856942,89660702,Slave has read all relay log; waiting for more updates,
+13.602,replica,0.446521,833,1,,1596054,1595221,6326,1592568,258845,1591799,856965,91824835,Slave has read all relay log; waiting for more updates,
+13.827,replica,0.360395,705,0,,1596578,1595873,6326,1593084,258901,1592430,856999,93549542,Slave has read all relay log; waiting for more updates,
+14.073,replica,0.304305,256,0,,1596947,1596691,6327,1593460,258946,1593205,857046,94505499,Reading event from the relay log,"{""Commit"": 18, ""Waiting for prior transaction to commit"": 46}"
+14.319,replica,0.251584,834,0,,1597816,1596982,6327,1594330,259045,1593560,857068,97052111,Slave has read all relay log; waiting for more updates,
+14.554,replica,0.501669,1205,1,,1598529,1597324,6327,1595043,259124,1593850,857084,99173372,Reading event from the relay log,
+14.843,replica,0.479992,1061,0,,1599118,1598057,6327,1595631,259192,1594574,857117,101052896,Slave has read all relay log; waiting for more updates,
+15.063,replica,0.507002,1002,0,,1599691,1598689,6327,1596204,259265,1595218,857149,102647946,Slave has read all relay log; waiting for more updates,"{"""": 1, ""Commit"": 30, ""Update_rows_log_event::find_row()"": 2, ""Waiting for prior transaction to commit"": 30, ""Write_rows_log_event::write_row()"": 1}"
+15.324,replica,0.355744,787,0,,1600354,1599567,6327,1596867,259341,1596082,857199,104611233,Slave has read all relay log; waiting for more updates,
+15.577,replica,0.503306,1167,1,,1601148,1599981,6327,1597662,259438,1596559,857224,107007874,Slave has read all relay log; waiting for more updates,
+15.825,replica,0.528866,1376,1,,1601716,1600340,6327,1598230,259515,1596859,857239,108678050,Slave has read all relay log; waiting for more updates,
+16.058,replica,0.695856,1403,0,,1602240,1600837,6327,1598754,259578,1597352,857266,110237120,Slave has read all relay log; waiting for more updates,"{"""": 1, ""Commit"": 44, ""Update_rows_log_event::ha_update_row()"": 1, ""Waiting for prior transaction to commit"": 18}"
+16.322,replica,0.558681,1195,0,,1602948,1601753,6327,1599461,259655,1598267,857316,112540684,Slave has read all relay log; waiting for more updates,
+16.552,replica,0.497808,1305,1,,1603763,1602458,6328,1600245,259746,1598972,857350,114683907,Reading event from the relay log,
+16.82,replica,0.531778,1319,0,,1604469,1603150,6328,1600974,259829,1599667,857388,116856464,Reading event from the relay log,
+17.081,replica,0.594774,1051,0,,1604809,1603758,6329,1601323,259872,1600303,857426,117904372,Slave has read all relay log; waiting for more updates,"{""After apply log event"": 34, ""Commit"": 17, ""Executing"": 1, ""Update_rows_log_event::ha_update_row()"": 1, ""Waiting for prior transaction to commit"": 11}"
+17.318,replica,0.647705,1119,0,,1605436,1604317,6331,1601950,259948,1600831,857456,119762719,Reading event from the relay log,
+17.576,replica,0.508351,1091,1,,1606022,1604931,6331,1602536,260014,1601487,857484,121609040,Slave has read all relay log; waiting for more updates,
+17.814,replica,0.453246,1031,0,,1606684,1605653,6331,1603205,260097,1602170,857516,123117340,Slave has read all relay log; waiting for more updates,
+18.061,replica,0.3909,735,0,,1607067,1606332,6331,1603581,260146,1602848,857547,124571976,Slave has read all relay log; waiting for more updates,"{""Commit"": 27, ""Waiting for prior transaction to commit"": 37}"
+18.341,replica,0.353378,661,0,,1607708,1607047,6331,1604222,260224,1603587,857581,126678828,Slave has read all relay log; waiting for more updates,
+18.559,replica,0.399106,852,1,,1608368,1607516,6331,1604882,260302,1604030,857604,128468176,Slave has read all relay log; waiting for more updates,
+18.826,replica,0.266051,547,0,,1609059,1608512,6331,1605622,260398,1605026,857652,130685284,Slave has read all relay log; waiting for more updates,
+19.081,replica,0.2918,368,0,,1609514,1609146,6331,1606028,260445,1605724,857689,132083550,Slave has read all relay log; waiting for more updates,"{""After apply log event"": 4, ""closing tables"": 3, ""Commit"": 55, ""Waiting for prior transaction to commit"": 2}"
+19.325,replica,0.244459,656,0,,1610340,1609684,6331,1606823,260529,1606198,857718,134477508,Reading event from the relay log,
+19.588,replica,0.398582,843,1,,1611021,1610178,6331,1607535,260596,1606800,857750,136530543,Slave has read all relay log; waiting for more updates,
+19.826,replica,0.345992,745,0,,1611706,1610961,6331,1608220,260691,1607475,857789,138559262,Slave has read all relay log; waiting for more updates,
+20.058,replica,0.395976,836,0,,1612215,1611379,6331,1608729,260756,1607893,857808,139968811,Reading event from the relay log,"{""After apply log event"": 18, ""closing tables"": 4, ""Commit"": 17, ""Update_rows_log_event::ha_update_row()"": 1, ""Waiting for prior transaction to commit"": 24}"
+20.309,replica,0.544019,1019,0,,1612786,1611767,6331,1609300,260813,1608281,857830,141668854,Reading event from the relay log,
+20.567,replica,0.699329,1131,1,,1613245,1612114,6331,1609750,260893,1608634,857848,143010205,Slave has read all relay log; waiting for more updates,
+20.829,replica,0.442134,372,0,,1613358,1612986,6331,1609872,260963,1609550,857895,143367173,Slave has read all relay log; waiting for more updates,
+21.058,replica,0.093199,0,0,,1613360,1613360,6332,1609874,260965,1609874,857917,143367753,Slave has read all relay log; waiting for more updates,"{""Waiting for work from SQL thread"": 64}"
+21.306,replica,0.042107,0,0,,1613363,1613363,6332,1609877,260968,1609877,857920,143368623,Slave has read all relay log; waiting for more updates,
+21.557,replica,0.092508,0,0,,1613365,1613365,6332,1609879,260970,1609879,857922,143369203,Slave has read all relay log; waiting for more updates,
+21.807,replica,0.04226,0,0,,1613368,1613368,6332,1609882,260973,1609882,857925,143370073,Slave has read all relay log; waiting for more updates,
+22.057,replica,0.091702,0,0,,1613370,1613370,6332,1609884,260975,1609884,857927,143370653,Slave has read all relay log; waiting for more updates,"{""Waiting for work from SQL thread"": 64}"
+22.307,replica,0.04137,0,0,,1613373,1613373,6332,1609887,260978,1609887,857930,143371523,Slave has read all relay log; waiting for more updates,
+22.56,replica,0.09176,0,0,,1613375,1613375,6332,1609889,260980,1609889,857932,143372103,Slave has read all relay log; waiting for more updates,
+22.807,replica,0.040736,0,0,,1613378,1613378,6332,1609892,260983,1609892,857935,143372973,Slave has read all relay log; waiting for more updates,
+23.06,replica,0.090729,0,0,,1613380,1613380,6332,1609894,260985,1609894,857937,143373553,Slave has read all relay log; waiting for more updates,"{""Waiting for work from SQL thread"": 64}"
+23.308,replica,0.040145,0,0,,1613383,1613383,6332,1609897,260988,1609897,857940,143374423,Slave has read all relay log; waiting for more updates,
+23.558,replica,0.089737,0,0,,1613385,1613385,6332,1609899,260990,1609899,857942,143375003,Slave has read all relay log; waiting for more updates,
+23.81,replica,0.039999,0,0,,1613388,1613388,6332,1609902,260993,1609902,857945,143375873,Slave has read all relay log; waiting for more updates,
+24.061,replica,0.089611,0,0,,1613390,1613390,6332,1609904,260995,1609904,857947,143376453,Slave has read all relay log; waiting for more updates,"{""Waiting for work from SQL thread"": 64}"

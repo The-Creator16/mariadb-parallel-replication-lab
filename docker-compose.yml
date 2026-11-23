@@ -1,0 +1,58 @@
+# The lag laboratory: one primary, one replica under test, and (optionally) a
+# deliberately delayed replica.
+#
+#   docker compose up -d --wait                       # primary + replica
+#   docker compose --profile delayed up -d --wait     # ... plus the delayed replica
+#
+# Everything a run changes (parallel threads, parallel mode, group-commit wait)
+# is set at runtime by the harness with SET GLOBAL, so the containers never
+# need restarting between runs. The .cnf files hold only what cannot change
+# at runtime, or what every run shares
+
+x-mariadb: &mariadb
+  image: ${MARIADB_IMAGE:-mariadb:11.8}
+  environment:
+    MARIADB_ROOT_PASSWORD: ${LAB_ROOT_PASSWORD:-lab}
+    MARIADB_ROOT_HOST: "%"
+  healthcheck:
+    test: ["CMD", "mariadb-admin", "ping", "-uroot", "-p${LAB_ROOT_PASSWORD:-lab}", "--silent"]
+    interval: 2s
+    timeout: 5s
+    retries: 90
+
+services:
+  primary:
+    <<: *mariadb
+    hostname: primary
+    volumes:
+      - ./config/primary.cnf:/etc/mysql/conf.d/zz-lab.cnf:ro
+      - primary-data:/var/lib/mysql
+    ports: ["${PRIMARY_PORT:-3307}:3306"]
+    cpus: ${PRIMARY_CPUS:-0}
+
+  replica:
+    <<: *mariadb
+    hostname: replica
+    volumes:
+      - ./config/replica.cnf:/etc/mysql/conf.d/zz-lab.cnf:ro
+      - replica-data:/var/lib/mysql
+    ports: ["${REPLICA_PORT:-3308}:3306"]
+    cpus: ${REPLICA_CPUS:-0}
+    depends_on:
+      primary: { condition: service_healthy }
+
+  delayed:
+    <<: *mariadb
+    hostname: delayed
+    profiles: ["delayed"]
+    volumes:
+      - ./config/delayed.cnf:/etc/mysql/conf.d/zz-lab.cnf:ro
+      - delayed-data:/var/lib/mysql
+    ports: ["${DELAYED_PORT:-3309}:3306"]
+    depends_on:
+      primary: { condition: service_healthy }
+
+volumes:
+  primary-data:
+  replica-data:
+  delayed-data:

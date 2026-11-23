@@ -1,0 +1,42 @@
+{
+  "run": "serial-optimistic-t16-r1",
+  "experiment": "4_workloads",
+  "workload": "serial",
+  "threads": 16,
+  "mode": "optimistic",
+  "clients": 32,
+  "tx_per_client": 8000,
+  "rows": 4,
+  "hot": 8,
+  "commit_wait_count": 0,
+  "commit_wait_usec": 100000,
+  "n_tx": 8000,
+  "load_s": 8.31,
+  "primary_tps": 962.8,
+  "replica_tps": 938.7,
+  "kept_up": true,
+  "peak_lag_s": 0.09,
+  "catchup_s": 0.21,
+  "total_s": 8.52,
+  "drain_s": 8.52,
+  "catchup_mode": false,
+  "replica_cpus": "1",
+  "lag_auc": 0.7,
+  "p_group_ratio": 1.0,
+  "r_group_ratio": 1.07,
+  "retried_tx": 0,
+  "worker_states": {
+    "Waiting for work from SQL thread": 0.819,
+    "Commit": 0.104,
+    "Waiting for prior transaction to commit": 0.049,
+    "": 0.007,
+    "After apply log event": 0.007,
+    "Update_rows_log_event::ha_update_row()": 0.007,
+    "Write_rows_log_event::write_row()": 0.007
+  },
+  "binlog_mean_group": 1.0,
+  "binlog_flags": {
+    "trans": 8130
+  },
+  "version": "11.8.6-MariaDB-5 from Ubuntu-log"
+}

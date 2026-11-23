@@ -1,0 +1,12 @@
+{
+  "name": "2_capacity",
+  "title": "Replica apply capacity vs. workers, and what limits it",
+  "question": "With a fixed backlog and the primary idle, how fast can the replica apply -- and is the ceiling CPU or something else?",
+  "mode_of_measurement": "catchup",
+  "repeats": 3,
+  "base": {"workload": "independent", "clients": 32, "tx_per_client": 1500, "rows": 4, "mode": "optimistic", "catchup": true},
+  "vary": [{"threads": 0}, {"threads": 1}, {"threads": 2}, {"threads": 4},
+           {"threads": 8}, {"threads": 16}, {"threads": 32}, {"threads": 64},
+           {"threads": 0, "replica_cpus": 2}, {"threads": 4, "replica_cpus": 2},
+           {"threads": 16, "replica_cpus": 2}, {"threads": 64, "replica_cpus": 2}]
+}

@@ -1,0 +1,91 @@
+{
+  "spec": {
+    "workload": "independent",
+    "clients": 32,
+    "tx_per_client": 1500,
+    "rows": 4,
+    "accounts": 200000,
+    "hot": 1,
+    "archive_rows": 1000,
+    "own_tables": 32,
+    "ddl_at": 5,
+    "threads": 0,
+    "mode": "optimistic",
+    "max_queued": null,
+    "domain_threads": 0,
+    "replica_sync_binlog": 1,
+    "replica_flush_log": 1,
+    "replica_cpus": 2,
+    "catchup": true,
+    "commit_wait_count": 0,
+    "commit_wait_usec": 100000,
+    "sample_interval": 0.25,
+    "settle_s": 3,
+    "timeout_s": 1200
+  },
+  "replicas": [
+    "replica"
+  ],
+  "n_tx": 48000,
+  "primary": {
+    "binlog_annotate_row_events": "ON",
+    "binlog_checksum": "CRC32",
+    "binlog_commit_wait_count": "0",
+    "binlog_commit_wait_usec": "100000",
+    "binlog_format": "ROW",
+    "gtid_domain_id": "0",
+    "innodb_buffer_pool_size": "536870912",
+    "innodb_flush_log_at_trx_commit": "1",
+    "sync_binlog": "1",
+    "version": "11.8.6-MariaDB-5 from Ubuntu-log"
+  },
+  "replica": {
+    "innodb_buffer_pool_size": "536870912",
+    "innodb_flush_log_at_trx_commit": "1",
+    "log_slave_updates": "ON",
+    "replicate_annotate_row_events": "ON",
+    "slave_domain_parallel_threads": "0",
+    "slave_parallel_max_queued": "131072",
+    "slave_parallel_mode": "optimistic",
+    "slave_parallel_threads": "0",
+    "slave_sql_verify_checksum": "ON",
+    "sync_binlog": "1",
+    "version": "11.8.6-MariaDB-5 from Ubuntu-log"
+  },
+  "host": {
+    "platform": "Linux-6.18.44-fc-v726-x86_64-with-glibc2.39",
+    "python": "3.13.18",
+    "host_cpus": 2,
+    "mariadb_image": "lab/mariadb:11.8.6",
+    "primary_cpus_limit": "1",
+    "replica_cpus_limit": "1",
+    "git_commit": "",
+    "host_mem_gb": 7.8
+  },
+  "started_at": "2026-11-22T22:24:50+0100",
+  "load_start": 1.7014098167419434,
+  "load_end": 18.19933581352234,
+  "caught_up_t": 52.086,
+  "apply_from": 18.201914072036743,
+  "replica_cpus_this_run": 2.0,
+  "events": [
+    {
+      "t": 1.513404130935669,
+      "event": "sql_thread_stopped"
+    },
+    {
+      "t": 18.201914072036743,
+      "event": "sql_thread_started"
+    }
+  ],
+  "binlog_range": {
+    "start": [
+      "mariadb-bin.000086",
+      5259473
+    ],
+    "end": [
+      "mariadb-bin.000086",
+      148726936
+    ]
+  }
+}

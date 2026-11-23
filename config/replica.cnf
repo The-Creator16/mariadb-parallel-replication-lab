@@ -1,0 +1,31 @@
+# Replica under test. slave_parallel_threads / slave_parallel_mode /
+# slave_parallel_max_queued / slave_domain_parallel_threads are dynamic and
+# set by the harness for every run (replication is stopped while it does so)
+[mariadb]
+server_id                      = 2
+log_bin                        = mariadb-bin
+binlog_format                  = ROW
+# A realistic replica keeps its own binlog (for failover / chained replicas)
+# It also means the replica pays the same fsync cost per commit as the
+# primary -- and can only amortise it by group-committing, i.e. by applying in parallel
+log_slave_updates              = ON
+replicate_annotate_row_events  = ON
+slave_sql_verify_checksum      = ON
+binlog_checksum                = CRC32
+
+sync_binlog                    = 1
+innodb_flush_log_at_trx_commit = 1
+
+relay_log                      = relay-bin
+skip_slave_start               = ON
+read_only                      = ON
+
+# Defaults the harness overrides per run
+slave_parallel_threads         = 0
+slave_parallel_mode            = optimistic
+
+innodb_buffer_pool_size        = 512M
+innodb_log_file_size           = 512M
+max_connections                = 300
+skip_name_resolve              = ON
+binlog_expire_logs_seconds     = 86400

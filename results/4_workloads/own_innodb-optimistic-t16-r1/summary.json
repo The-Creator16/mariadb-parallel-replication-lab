@@ -1,0 +1,40 @@
+{
+  "run": "own_innodb-optimistic-t16-r1",
+  "experiment": "4_workloads",
+  "workload": "own_innodb",
+  "threads": 16,
+  "mode": "optimistic",
+  "clients": 32,
+  "tx_per_client": 1000,
+  "rows": 4,
+  "hot": 8,
+  "commit_wait_count": 0,
+  "commit_wait_usec": 100000,
+  "n_tx": 32000,
+  "load_s": 5.66,
+  "primary_tps": 5651.5,
+  "replica_tps": 5999.8,
+  "kept_up": false,
+  "peak_lag_s": 0.41,
+  "catchup_s": 0.13,
+  "total_s": 5.79,
+  "drain_s": 5.79,
+  "catchup_mode": false,
+  "replica_cpus": "1",
+  "lag_auc": 1.4,
+  "p_group_ratio": 8.56,
+  "r_group_ratio": 5.76,
+  "retried_tx": 0,
+  "worker_states": {
+    "Waiting for prior transaction to commit": 0.667,
+    "Commit": 0.281,
+    "Write_rows_log_event::write_row()": 0.021,
+    "After apply log event": 0.021,
+    "closing tables": 0.01
+  },
+  "binlog_mean_group": 8.27,
+  "binlog_flags": {
+    "trans": 32107
+  },
+  "version": "11.8.6-MariaDB-5 from Ubuntu-log"
+}

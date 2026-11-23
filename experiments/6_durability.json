@@ -1,0 +1,12 @@
+{
+  "name": "6_durability",
+  "title": "Control: how much of the lag is the replica's fsync?",
+  "question": "Replica capacity with full durability (sync_binlog=1, innodb_flush_log_at_trx_commit=1) vs relaxed (0, 2), single-threaded and with 16 workers.",
+  "mode_of_measurement": "catchup",
+  "repeats": 3,
+  "base": {"workload": "independent", "clients": 32, "tx_per_client": 1500, "rows": 4, "mode": "optimistic", "catchup": true},
+  "vary": [
+    {"threads": 0}, {"threads": 0, "replica_sync_binlog": 0, "replica_flush_log": 2},
+    {"threads": 16}, {"threads": 16, "replica_sync_binlog": 0, "replica_flush_log": 2}
+  ]
+}

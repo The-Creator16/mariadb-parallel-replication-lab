@@ -1,0 +1,121 @@
+python3 -m lab demo-binlog
+
+==============================================================================
+1. The settings that make the binlog legible
+==============================================================================
+[primary]> SELECT @@binlog_format, @@binlog_annotate_row_events, @@binlog_checksum, @@master_verify_checksum
+    ROW | 1 | CRC32 | 1
+[replica]> SELECT @@replicate_annotate_row_events, @@slave_sql_verify_checksum, @@log_slave_updates
+    1 | 1 | 1
+
+==============================================================================
+2. One transaction, annotated
+==============================================================================
+[primary]> UPDATE lab.accounts SET balance = balance - 10 WHERE id IN (1, 2, 3)
+[primary]> SELECT @@last_gtid
+    0-1-19606
+$ mariadb-binlog --base64-output=decode-rows --verbose ...  (excerpt)
+    #261122 22:29:01 server id 1  end_log_pos 33313 CRC32 0x3d01c48c 	GTID 0-1-19606 trans thread_id=116
+    #261122 22:29:01 server id 1  end_log_pos 0 CRC32 0x4700515e 	Annotate_rows:
+    #Q> UPDATE lab.accounts SET balance = balance - 10 WHERE id IN (1, 2, 3)
+    #261122 22:29:01 server id 1  end_log_pos 0 CRC32 0xedd80224 	Table_map: `lab`.`accounts` mapped to number 162
+    #261122 22:29:01 server id 1  end_log_pos 0 CRC32 0x7f4d7a59 	Update_rows: table id 162 flags: STMT_END_F
+    ### UPDATE `lab`.`accounts`
+    ### WHERE
+    ###   @1=1
+    ###   @2=1000
+    ###   @3=0
+    ###   @4='2026-11-22 22:29:01.256849'
+    ### SET
+    ###   @1=1
+    ###   @2=990
+    ###   @3=0
+    ###   @4='2026-11-22 22:29:01.256849'
+    ### UPDATE `lab`.`accounts`
+    ### WHERE
+    ###   @1=2
+    ###   @2=1000
+    ###   @3=0
+    ###   @4='2026-11-22 22:29:01.256849'
+    ### SET
+    ###   @1=2
+    ###   @2=990
+    ###   @3=0
+    ###   @4='2026-11-22 22:29:01.256849'
+    ### UPDATE `lab`.`accounts`
+    ### WHERE
+    ###   @1=3
+    ###   @2=1000
+    ###   @3=0
+    ###   @4='2026-11-22 22:29:01.256849'
+    ### SET
+    ###   @1=3
+    ###   @2=990
+    ###   @3=0
+    ###   @4='2026-11-22 22:29:01.256849'
+    #261122 22:29:01 server id 1  end_log_pos 33673 CRC32 0xdac032bb 	Xid = 500984
+
+  Read it top to bottom:
+    GTID 0-1-N trans     the transaction's id (domain-server-sequence); 'trans' = transactional
+    Annotate_rows / #Q>  the SQL statement that produced the row events below it. Without
+                         binlog_annotate_row_events you would only see the rows.
+    Table_map            which table the following row events refer to
+    Update_rows + ###    the row images: what the replica will apply. The replica never
+                         re-runs the UPDATE; it applies these before/after images.
+    CRC32 0x...          every event header carries its checksum (binlog_checksum=CRC32)
+
+==============================================================================
+3. The same statement with annotation switched off for this session
+==============================================================================
+[primary]> SET SESSION binlog_annotate_row_events = OFF
+[primary]> UPDATE lab.accounts SET balance = balance - 10 WHERE id IN (4, 5, 6)
+[primary]> SET SESSION binlog_annotate_row_events = ON
+    #261122 22:29:01 server id 1  end_log_pos 33715 CRC32 0x0e9d1173 	GTID 0-1-19607 trans thread_id=116
+    #261122 22:29:01 server id 1  end_log_pos 0 CRC32 0x1b77a534 	Update_rows: table id 162 flags: STMT_END_F
+    ### UPDATE `lab`.`accounts`
+    ### UPDATE `lab`.`accounts`
+    ### UPDATE `lab`.`accounts`
+  -> no #Q> line: the rows are there, the statement that changed them is not.
+
+==============================================================================
+4. Group commit, as written in the binlog: cid=
+==============================================================================
+  8 clients commit 50 transactions each, concurrently ...
+    CRC32 0x96fbb684 	GTID 0-1-19628 cid=501357 trans thread_id=125
+    CRC32 0xe8d9bf66 	GTID 0-1-19629 cid=501357 trans thread_id=123
+    CRC32 0xeae6ff7b 	GTID 0-1-19630 trans thread_id=126
+    CRC32 0x6d9fcdf7 	GTID 0-1-19631 cid=501437 trans thread_id=122
+    CRC32 0x520177e0 	GTID 0-1-19632 cid=501437 trans thread_id=127
+    CRC32 0x0bd1be1b 	GTID 0-1-19633 cid=501437 trans thread_id=124
+    CRC32 0x76e0f3f6 	GTID 0-1-19634 cid=501490 trans thread_id=128
+    CRC32 0xd02b9274 	GTID 0-1-19635 cid=501490 trans thread_id=123
+    CRC32 0xce2c107a 	GTID 0-1-19636 cid=501490 trans thread_id=125
+    CRC32 0x6e29a108 	GTID 0-1-19637 cid=501490 trans thread_id=126
+    CRC32 0xa258e52f 	GTID 0-1-19638 trans thread_id=122
+    CRC32 0x1d0906b6 	GTID 0-1-19639 trans thread_id=124
+  -> GTIDs that share a cid= were flushed to the binlog in one group commit: they were
+     committing at the same moment on the primary, so none waited for another and the replica
+     may apply them in parallel (that is all slave_parallel_mode=conservative relies on).
+
+==============================================================================
+5. Checksums: verify a binlog, then corrupt one byte of a copy
+==============================================================================
+$ docker compose exec primary sh -c "mariadb-binlog --verify-binlog-checksum /var/lib/mysql/mariadb-bin.000004 > /dev/null && echo 'all events: checksum OK'"
+all events: checksum OK
+
+  (copy of mariadb-bin.000004: one byte inside the Update_rows event at position 33458 changed)
+$ docker compose exec primary sh -c "cp /var/lib/mysql/mariadb-bin.000004 /tmp/corrupt.bin && b=$(od -An -tu1 -j 33488 -N1 /tmp/corrupt.bin | tr -d ' ') && if [ "$b" = 0 ]; then v='\001'; else v='\000'; fi && printf "$v" | dd of=/tmp/corrupt.bin bs=1 seek=33488 conv=notrunc 2>/dev/null && echo "events in the copy, not verified: $(mariadb-binlog /tmp/corrupt.bin 2>/dev/null | grep -c '^# at')" && echo "events in the copy, verified:     $(mariadb-binlog --verify-binlog-checksum /tmp/corrupt.bin 2>/dev/null | grep -c '^# at')" && mariadb-binlog --verify-binlog-checksum /tmp/corrupt.bin > /dev/null 2>/tmp/err; echo "exit status: $?"; cat /tmp/err"
+    events in the copy, not verified: 5647
+    events in the copy, verified:     41
+    exit status: 0
+    ERROR: Error in Log_event::read_log_event(): 'Event crc check failed! Most likely there is event corruption.', data_len: 184, event_type: 24
+  -> Without verification mariadb-binlog happily decodes the damaged event. With
+     --verify-binlog-checksum it stops right before it and reports the CRC failure.
+     Note the exit status: 0 (observed on 11.8.6). A script that checks a binlog
+     must look at stderr, not at $?.
+
+     A replica does not have that problem: with
+     master_verify_checksum the primary checks events as it reads them from disk, the IO
+     thread checks what arrives over the network, and slave_sql_verify_checksum makes the SQL
+     thread check what it reads back from the relay log. A flipped bit stops replication with
+     an error instead of being applied silently.
